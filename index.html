@@ -1,13 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html ng-app='riddleApp'>
     <head>
         <title>The Riddle Box by Jem</title>
         <meta charset = 'utf-8'>
         <meta name='viewport' content='width=device-width initial-scale=1'>
         <meta name='description' content='A random riddle generator that automatically updates everyday'>
         <link rel='stylesheet' type='text/css' href='style.css'>
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Patrick+Hand+SC" rel="stylesheet">
         <script src='app/library/angular.min.js'></script>
+        <script src='app/app.js'></script>
     </head>
-    <body></body>
+    <body ng-controller='riddleCtrl'>
+        <h1>TheRiddleBox</h1>
+        <div id='problem' class='flex-column' ng-repeat='riddle in riddles'>
+            <h2>{{riddle.title}}</h2>
+            <ul class='flex-column'>
+                <li ng-repeat='line in riddle.problem'>{{line}}</li>
+            </ul>
+            <p>Riddle from: {{riddle.source}}</p>
+            <button>SHOW SOLUTION</button>
+            <div id='solution' class='flex-column'>
+                <h2>SOLUTION</h2>
+                <ul class='flex-column'>
+                    <li ng-repeat='line in riddle.solution'>{{line}}</li>
+                </ul>
+            </div>
+            <button>NEXT RIDDLE</button>
+        </div>
+    </body>
 </html>
 
