@@ -23,6 +23,7 @@ controllers.mainController =  ['$scope', '$http', function($scope, $http){
     $http.get('data/riddles.json').then(function(data){
         $scope.riddles = data;
     });
+    $scope.message = 'hellow';
 }];
 riddleApp.controller(controllers);
 
