@@ -17,7 +17,10 @@
                 <h1>riddleBox</h1>
                 <a class='directory-btn'>Directory</a>
                 <ul class='directory-list' ng-controller='mainController'>
-                    <li ng-repeat='rdle in riddles'>{{rdle[id]}} {{rdle[title]}}</li>
+                    <li ng-repeat='rdle in riddles'>
+                        <!-- {{rdle[id]}} {{rdle[title]}} -->
+                        {{rdle}}
+                    </li>
                 </ul>
             </div>
         </header>
