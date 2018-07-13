@@ -14,13 +14,10 @@
     <body>
         <header>
             <div class='wrapper' ng-controller='mainController'>
-                <p>{{riddles}}</p>
                 <h1>riddleBox</h1>
                 <a class='directory-btn'>Directory</a>
                 <ul class='directory-list'>
-                    <li ng-repeat='riddle in riddles'>
-                        <span>{{riddle[id]}} {{riddle[title]}}</span>
-                    </li>
+                    <li ng-repeat='riddle in riddles'> {{riddle[id]}} {{riddle[title]}}</li>
                 </ul>
             </div>
         </header>
