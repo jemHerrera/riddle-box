@@ -15,7 +15,11 @@ riddleApp.config(['$routeProvider', function($routeProvider){
         });
 }]);
 
-riddleApp.controller('riddleCtrl', function($scope){
+let controllers = {};
+controllers.controller('introController', function($scope){
+    
+});
+controllers.controller('mainController', function($scope){
     $scope.riddles = [
     {
         id: 0,
@@ -78,6 +82,7 @@ riddleApp.controller('riddleCtrl', function($scope){
     }
 ]
 });
+riddleApp.controller(controllers);
 
 
 // NEED!
