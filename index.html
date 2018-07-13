@@ -10,23 +10,27 @@
         <script src='app/library/angular.min.js'></script>
         <script src='app/app.js'></script>
     </head>
-    <body ng-controller='riddleCtrl'>
-        <h1>TheRiddleBox</h1>
-        <div id='problem' class='flex-column' ng-repeat='riddle in riddles'>
-            <h2>{{riddle.title}}</h2>
-            <ul class='flex-column'>
-                <li ng-repeat='line in riddle.problem'>{{line}}</li>
-            </ul>
-            <p>Riddle from: {{riddle.source}}</p>
-            <button>SHOW SOLUTION</button>
-            <div id='solution' class='flex-column'>
-                <h2>SOLUTION</h2>
-                <ul class='flex-column'>
-                    <li ng-repeat='line in riddle.solution'>{{line}}</li>
+    <body>
+        <header>
+            <div class='wrapper'>
+                <h1>riddleBox</h1>
+                <a class='directory-btn'>Directory</a>
+                <ul class='directory-list'>
+                    <li ng-repeat=''>{{}}</li>
                 </ul>
             </div>
-            <button>NEXT RIDDLE</button>
-        </div>
+        </header>
+        <main ng-view></main>
+        <footer>
+            <div class='wrapper'>
+                <p>Riddles and images from: </p>
+                <ul>
+                    <li>Brilliant</li>
+                    <li>Popular Mechanics</li>
+                </ul>
+                <p>Copyright &copy; 2018 riddleBox by Jem</p>
+            </div>
+        </footer>
     </body>
 </html>
 

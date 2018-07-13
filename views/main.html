@@ -1,0 +1,15 @@
+<div id='problem' class='flex-column' ng-repeat='riddle in riddles'>
+    <h2>{{riddle.title}}</h2>
+    <ul class='flex-column'>
+        <li ng-repeat='line in riddle.problem'>{{line}}</li>
+    </ul>
+    <p>Riddle from: {{riddle.source}}</p>
+    <button>SHOW SOLUTION</button>
+    <div id='solution' class='flex-column'>
+        <h2>SOLUTION</h2>
+        <ul class='flex-column'>
+            <li ng-repeat='line in riddle.solution'>{{line}}</li>
+        </ul>
+    </div>
+    <button>NEXT RIDDLE</button>
+</div>
