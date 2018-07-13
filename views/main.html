@@ -1,3 +1,14 @@
+<header>
+    <div class='wrapper'>
+        <h1>riddleBox</h1>
+        <a class='directory-btn'>Directory</a>
+        <ul class='directory-list'>
+            <li ng-repeat='riddle in riddles'>
+                {{riddle[id]}} {{riddle[title]}}
+            </li>
+        </ul>
+    </div>
+</header>
 <div id='problem' class='flex-column' ng-repeat='riddle in riddles'>
     <h2>{{riddle[title]}}</h2>
     <ul class='flex-column'>

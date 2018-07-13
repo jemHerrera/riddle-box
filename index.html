@@ -12,18 +12,6 @@
         <script src='app/app.js'></script>
     </head>
     <body>
-        <header>
-            <div class='wrapper'>
-                <h1>riddleBox</h1>
-                <a class='directory-btn'>Directory</a>
-                <ul class='directory-list' data-ng-controller='mainController'>
-                    <li ng-repeat='riddle in riddles'>
-                        <!-- {{rdle[id]}} {{rdle[title]}} -->
-                        {{riddle}}
-                    </li>
-                </ul>
-            </div>
-        </header>
         <main ng-view></main>
         <footer>
             <div class='wrapper'>
