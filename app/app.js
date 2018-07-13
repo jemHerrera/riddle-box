@@ -23,7 +23,7 @@ controllers.mainController =  ['$scope', '$http', function($scope, $http){
         $scope.riddles = response.data;
     });
     $scope.count = 0;
-    if($scope.count = $scope.riddle.length) $scope.count = 0;
+    if($scope.count == $scope.riddles.length) $scope.count = 0;
 }];
 riddleApp.controller(controllers);
 
