@@ -1,7 +1,6 @@
 let riddleApp = angular.module('riddleApp', ['ngRoute']);
 
 riddleApp.config(['$routeProvider', function($routeProvider){
-
     $routeProvider
         .when('/intro', {
             templateUrl: 'views/intro.html',
@@ -24,6 +23,7 @@ controllers.mainController =  ['$scope', '$http', function($scope, $http){
         $scope.riddles = response.data;
     });
     $scope.count = 0;
+    if($scope.count = $scope.riddle.length) $scope.count = 0;
 }];
 riddleApp.controller(controllers);
 
