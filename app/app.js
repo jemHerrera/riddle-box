@@ -1,4 +1,19 @@
-let riddleApp = angular.module('riddleApp', []);
+let riddleApp = angular.module('riddleApp', ['ngRoute']);
+
+riddleApp.config(['$routeProvider', function($routeProvider){
+
+    $routeProvider
+        .when('/intro', {
+            templateUrl: 'views/intro.html',
+            controller: 'introController'
+        })
+        .when('/main',{
+            templateUrl: 'views/main.html',
+            controller: 'mainController'
+        }).otherwise({
+            redirectTo: '/intro'
+        });
+}]);
 
 riddleApp.controller('riddleCtrl', function($scope){
     $scope.riddles = [
