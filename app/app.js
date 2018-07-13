@@ -15,19 +15,24 @@ riddleApp.config(['$routeProvider', function($routeProvider){
         });
 }]);
 
-let controllers = {};
-controllers.introController = function($scope){
+// let controllers = {};
+// controllers.introController = function($scope){
 
-};
-controllers.mainController =  ['$scope', '$http', function($scope, $http){
+// };
+// controllers.mainController =  ['$scope', '$http', function($scope, $http){
+//     $http.get('data/riddles.json').then(function(data){
+//         $scope.riddles = data;
+//     });
+//     $scope.message = 'hellow';
+// }];
+// riddleApp.controller(controllers);
+
+riddleApp.controller('mainController', ['$scope', '$http', function($scope, $http){
     $http.get('data/riddles.json').then(function(data){
         $scope.riddles = data;
     });
     $scope.message = 'hellow';
-}];
-riddleApp.controller(controllers);
-
-
+}]);
 // NEED!
 
 // 1. Create a random number from 0 to $scope.riddles.length-1 to show a random riddleApp. this must be done before the loading (maybe on config?)
