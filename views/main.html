@@ -1,14 +1,14 @@
 <div id='problem' class='flex-column'>
     <h2>{{riddles[count]["title"]}}</h2>
     <ul class='flex-column'>
-        <li ng-repeat='line in riddles[count]problem'>{{line}}</li>
+        <li ng-repeat='line in riddles[count].problem'>{{line}}</li>
     </ul>
     <p>Riddle from: {{riddles[count]["source"]}}</p>
     <button>SHOW SOLUTION</button>
     <div id='solution' class='flex-column'>
         <h2>SOLUTION</h2>
         <ul class='flex-column'>
-            <li ng-repeat='line in riddles[count]solution'>{{line}}</li>
+            <li ng-repeat='line in riddles[count].solution'>{{line}}</li>
         </ul>
     </div>
     <button>NEXT RIDDLE</button>
