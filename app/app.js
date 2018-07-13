@@ -3,11 +3,11 @@ let riddleApp = angular.module('riddleApp', ['ngRoute']);
 riddleApp.config(['$routeProvider', function($routeProvider){
 
     $routeProvider
-        .when('/intro', {
+        .when('!/intro', {
             templateUrl: 'views/intro.html',
             controller: 'introController'
         })
-        .when('/main',{
+        .when('!/main',{
             templateUrl: 'views/main.html',
             controller: 'mainController'
         }).otherwise({
