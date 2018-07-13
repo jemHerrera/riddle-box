@@ -20,7 +20,7 @@ controllers.introController = function($scope){
 
 };
 controllers.mainController =  ['$scope', '$http', function($scope, $http){
-    $http.get('data/riddles.json').success(function(data){
+    $http.get('data/riddles.json').then(function(data){
         $scope.riddles = data;
     });
 }];
