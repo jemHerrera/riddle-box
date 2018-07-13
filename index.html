@@ -13,11 +13,13 @@
     </head>
     <body>
         <header>
-            <div class='wrapper'>
+            <div class='wrapper' ng-controller='mainController'>
                 <h1>riddleBox</h1>
                 <a class='directory-btn'>Directory</a>
                 <ul class='directory-list'>
-                    <li ng-repeat=''>{{}}</li>
+                    <li ng-repeat='riddle in riddles'>
+                        <span>{{riddle.id}} {{riddle.title}}</span>
+                    </li>
                 </ul>
             </div>
         </header>
