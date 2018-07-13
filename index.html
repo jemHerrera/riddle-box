@@ -12,6 +12,17 @@
         <script src='app/app.js'></script>
     </head>
     <body>
+        <header ng-controller='mainController'>
+            <div class='wrapper'>
+                <h1>riddleBox</h1>
+                <a class='directory-btn'>Directory</a>
+                <ul class='directory-list'>
+                    <li ng-repeat='riddle in riddles'>
+                        {{riddle["title"]}}
+                    </li>
+                </ul>
+            </div>
+        </header>
         <main ng-view></main>
         <footer>
             <div class='wrapper'>
