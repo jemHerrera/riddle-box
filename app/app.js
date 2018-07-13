@@ -20,10 +20,9 @@ controllers.introController = function($scope){
 
 };
 controllers.mainController =  ['$scope', '$http', function($scope, $http){
-    $http.get('data/riddles.json').then(function(data){
-        $scope.riddles = data;
-    });
-    $scope.message = 'hellow';
+    $http.get('data/riddles.json').then(function(response){
+        $scope.riddles = response.data;
+    });;
 }];
 riddleApp.controller(controllers);
 
