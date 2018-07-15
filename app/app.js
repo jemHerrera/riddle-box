@@ -7,6 +7,7 @@ riddleApp.config(['$routeProvider', function($routeProvider){
         })
         .when('/main',{
             templateUrl: 'views/main.html',
+            controller: 'mainController'
         }).otherwise({
             redirectTo: '/intro'
         });
