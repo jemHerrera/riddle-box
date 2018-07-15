@@ -19,9 +19,13 @@ controllers.mainController =  ['$scope', '$http', function($scope, $http){
     $scope.count = 0;
     $scope.directory = false;
     $scope.solution = false;
-    $scope.closeDirectory = function(){
-        if($scope.directory == true) $scope.directory = false;
-    }
+
+    let everywhere = angular.element(window.document);
+    everywhere.bind('click', function(event){
+        let isButtonClick = event.target === element.find('.directory-btn')[0];
+        if (!isbuttonClick) $scope.directory = false;
+        $scope.apply();
+    });
 }];
 riddleApp.controller(controllers);
 
