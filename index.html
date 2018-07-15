@@ -19,7 +19,7 @@
                 <button ng-click='directory = !directory' class='directory-btn'>Directory</button>
                 <ul class='directory-list' ng-show='directory'>
                     <li ng-repeat='riddle in riddles'>
-                        <a href="{{riddle['id']}}">{{riddle["title"]}}</a>
+                        <a href="riddle['id']">{{riddle["title"]}}</a>
                     </li>
                 </ul>
             </div>
