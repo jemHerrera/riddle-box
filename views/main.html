@@ -1,8 +1,8 @@
 <div>
     <button ng-click='directory = !directory' class='directory-btn'>Directory</button>
-    <ul>
+    <ul class='directory-list' ng-show='directory'>
         <li ng-repeat='riddle in riddles'>
-            <button ng-click='getScope().count = riddle["id"]; solution = false; directory = false;'>{{riddle['title']}}</button>
+            <button ng-click='getScope().count = riddle["id"]; getScope().solution = false; getScope().directory = false;'>{{riddle['title']}}</button>
         </li>
     </ul>
 </div>
