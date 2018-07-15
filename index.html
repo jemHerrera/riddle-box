@@ -18,8 +18,8 @@
                 <a href='#!/intro'><h1>riddleBox</h1></a>
                 <button ng-click='directory = !directory' class='directory-btn'>Directory</button>
                 <ul class='directory-list' ng-show='directory'>
-                    <li ng-repeat='riddle in riddles' ng-click='count = riddle[id]'>
-                        {{riddle["title"]}}
+                    <li ng-repeat='riddle in riddles'>
+                        <button ng-click='count = riddle[id]'>{{riddle["title"]}}</button> 
                     </li>
                 </ul>
             </div>
