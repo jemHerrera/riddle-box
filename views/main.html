@@ -4,7 +4,7 @@
         <li ng-repeat='line in riddles[count]["problem"]'>{{line}}</li>
     </ul>
     <p>Riddle from: {{riddles[count]["source"]}}</p>
-    <button ng-click='toggle(solution)'>SHOW SOLUTION</button>
+    <button ng-click='solution = !solution'>SHOW SOLUTION</button>
     <div id='solution' class='flex-column' ng-show='solution'>
         <h2>SOLUTION</h2>
         <ul class='flex-column'>
