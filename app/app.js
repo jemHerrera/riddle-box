@@ -1,4 +1,4 @@
-let riddleApp = angular.module('riddleApp', ['ngRoute']);
+let riddleApp = angular.module('riddleApp', ['ngRoute', 'ngAnimate']);
 
 riddleApp.config(['$routeProvider', function($routeProvider){
     $routeProvider

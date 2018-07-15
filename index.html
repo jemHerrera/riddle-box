@@ -9,12 +9,13 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Patrick+Hand+SC" rel="stylesheet">
         <script src='app/library/angular.min.js'></script>
         <script src='app/library/angular-route.min.js'></script>
+        <script src='app/library/angular-animate.min.js'></script>
         <script src='app/app.js'></script>
     </head>
     <body>
         <header ng-controller='mainController'>
             <div class='wrapper'>
-                <h1>riddleBox</h1>
+                <a href='#!/intro'><h1>riddleBox</h1></a>
                 <button ng-click='directory = !directory' class='directory-btn'>Directory</button>
                 <ul class='directory-list' ng-show='directory'>
                     <li ng-repeat='riddle in riddles'>
