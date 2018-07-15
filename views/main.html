@@ -5,7 +5,7 @@
             <button ng-repeat='riddle in riddles' ng-click='count = count + 1; solution = false; directory = false;'>{{riddle["title"]}}</button> 
         </div>
     </div> -->
-    <button ng-repeat='riddle in riddles' ng-click='count = count + 1; solution = false; directory = false;'>{{riddle["title"]}}</button>
+    <button ng-click='count = count + 1; solution = false; directory = false;'></button>
     <h2>{{riddles[count]["title"]}}</h2>
     <ul class='flex-column'>
         <li ng-repeat='line in riddles[count]["problem"]'>{{line}}</li>
