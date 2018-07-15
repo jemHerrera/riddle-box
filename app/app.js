@@ -19,9 +19,6 @@ controllers.mainController =  ['$scope', '$http', function($scope, $http){
     $scope.count = 0;
     $scope.directory = false;
     $scope.solution = false;
-    document.body.addEventListener('click', function(event){
-        if (event.target !== document.querySelector('directory-btn')) $scope.directory = false;
-    });
 }];
 riddleApp.controller(controllers);
 
