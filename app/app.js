@@ -22,7 +22,7 @@ controllers.mainController =  ['$scope', '$http', function($scope, $http){
 
     let everywhere = angular.element(window.document);
     everywhere.bind('click', function(event){
-        let isButtonClick = event.target === element.find('.directory-btn')[0];
+        let isButtonClick = event.target === element.find('directory-btn')[0];
         if (!isbuttonClick) $scope.directory = false;
         $scope.apply();
     });
