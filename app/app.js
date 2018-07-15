@@ -24,9 +24,8 @@ controllers.mainController =  ['$scope', '$http', function($scope, $http){
     everywhere.bind('click', function(event){
         let isButtonClick = event.target === document.querySelector('directory-btn');
         if (!isButtonClick) $scope.directory = false;
-        console.log(document.querySelector('directory-btn'));
+        console.log(document.querySelector('.directory-btn'));
         console.log(event.target);
-        $scope.apply();
     });
 }];
 riddleApp.controller(controllers);
