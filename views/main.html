@@ -2,7 +2,7 @@
     <div>
         <button ng-click='directory = !directory' class='directory-btn'>Directory</button>
         <div class='directory-list' ng-show='directory'>
-            <button ng-repeat='riddle in riddles' ng-click='count = riddle["id"]; solution = false; directory = false;'>{{riddle["title"]}}</button> 
+            <button ng-repeat='riddle in riddles' ng-click='count = count + 1; solution = false; directory = false;'>{{riddle["title"]}}</button> 
         </div>
     </div>
     <h2>{{riddles[count]["title"]}}</h2>
