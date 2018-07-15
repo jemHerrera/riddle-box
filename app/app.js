@@ -23,6 +23,8 @@ controllers.mainController =  ['$scope', '$http', function($scope, $http){
         $scope.riddles = response.data;
     });
     $scope.count = 0;
+    $scope.directory = false;
+    $scope.solution = false;
 }];
 riddleApp.controller(controllers);
 
