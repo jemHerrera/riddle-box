@@ -4,20 +4,13 @@ riddleApp.config(['$routeProvider', function($routeProvider){
     $routeProvider
         .when('/intro', {
             templateUrl: 'views/intro.html',
-            controller: 'introController'
         })
         .when('/main',{
             templateUrl: 'views/main.html',
-            controller: 'mainController'
         }).otherwise({
             redirectTo: '/intro'
         });
 }]);
-
-let controllers = {};
-controllers.introController = function($scope){
-
-};
 controllers.mainController =  ['$scope', '$http', function($scope, $http){
     $http.get('data/riddles.json').then(function(response){
         $scope.riddles = response.data;
@@ -25,6 +18,9 @@ controllers.mainController =  ['$scope', '$http', function($scope, $http){
     $scope.count = 0;
     $scope.directory = false;
     $scope.solution = false;
+    $scope.closeDirectory = function(){
+        if($scope.directory == true) $scope.directory = false;
+    }
 }];
 riddleApp.controller(controllers);
 
