@@ -18,9 +18,7 @@ controllers.mainController =  ['$scope', '$http', function($scope, $http){
     $scope.count = 0;
     $scope.directory = false;
     $scope.solution = false;
-    $scope.closeDirectory = function(){
-        if($scope.directory == true) $scope.directory = false;
-    }
+
 }];
 riddleApp.controller(controllers);
 
