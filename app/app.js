@@ -24,7 +24,7 @@ controllers.mainController =  ['$scope', '$http', function($scope, $http){
     };
     let everywhere = angular.element(window.document);
     everywhere.bind('click', function(event){
-        if (event.target !== document.querySelector('directory-btn')) $scope.toggle();
+        if (event.target !== document.querySelector('directory-btn')) $scope.directory = false;
     });
 }];
 riddleApp.controller(controllers);
