@@ -7,7 +7,7 @@
     </div> -->
     <ul>
         <li ng-repeat='riddle in riddles'>
-            <button ng-click='count = count + 1; solution = false; directory = false;'>{{riddle['title']}}</button>
+            <button ng-click='getScope().count = count + 1; solution = false; directory = false;'>{{riddle['title']}}</button>
         </li>
     </ul>
     <h2>{{riddles[count]["title"]}}</h2>

@@ -20,6 +20,8 @@ controllers.mainController =  ['$scope', '$http', function($scope, $http){
     $scope.count = 0;
     $scope.directory = false;
     $scope.solution = false;
+
+    $scope.getScope = () => $scope;
 }];
 riddleApp.controller(controllers);
 
