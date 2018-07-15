@@ -16,7 +16,7 @@
         <header>
             <div class='wrapper'>
                 <a href='#!/intro'><h1>riddleBox</h1></a>
-                <button ng-hover='directory = !directory' class='directory-btn'>Directory</button>
+                <button ng-click='directory = !directory' class='directory-btn'>Directory</button>
                 <ul class='directory-list' ng-show='directory'>
                     <li ng-repeat='riddle in riddles'>
                         {{riddle["title"]}}
