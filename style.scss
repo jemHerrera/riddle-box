@@ -71,6 +71,9 @@ body {
                 color: $primary-color;
             }
             #solution{
+                ul{
+                    margin-bottom: 10%;
+                }
                 h2{
                     color: $primary-color;
                 }
@@ -78,6 +81,12 @@ body {
             .primary-link{
                 padding: 2% 0;
                 text-align: right;
+                color: $tertiary-color;
+                transition: color 200ms ease-in-out;
+                margin-top: 5%;
+                &:hover{
+                    color: rgb(106, 212, 238);
+                }
             }
         }
     }
@@ -123,12 +132,3 @@ body {
     margin: auto;
     width:50%;
 }
-.primary-link{
-    color: $tertiary-color;
-    transition: color 200ms ease-in-out;
-    margin-top: 5%;
-    &:hover{
-        color: rgb(106, 212, 238);
-    }
-}
-

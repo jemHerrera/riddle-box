@@ -53,11 +53,20 @@ body {
     body main #problem .show-solution {
       text-align: left;
       color: #6ad4ee; }
+    body main #problem #solution ul {
+      margin-bottom: 10%; }
     body main #problem #solution h2 {
       color: #6ad4ee; }
     body main #problem .primary-link {
       padding: 2% 0;
-      text-align: right; }
+      text-align: right;
+      color: #5050507c;
+      -webkit-transition: color 200ms ease-in-out;
+      -o-transition: color 200ms ease-in-out;
+      transition: color 200ms ease-in-out;
+      margin-top: 5%; }
+      body main #problem .primary-link:hover {
+        color: #6ad4ee; }
   body footer {
     background-color: #191d23;
     padding: 2%;
@@ -102,12 +111,3 @@ body {
 .wrapper {
   margin: auto;
   width: 50%; }
-
-.primary-link {
-  color: #5050507c;
-  -webkit-transition: color 200ms ease-in-out;
-  -o-transition: color 200ms ease-in-out;
-  transition: color 200ms ease-in-out;
-  margin-top: 5%; }
-  .primary-link:hover {
-    color: #6ad4ee; }
