@@ -31,7 +31,7 @@ body {
         color: white;
         text-align: end;
         padding: 3%; }
-        body main .directory > button .fa-caret-down {
+        body main .directory > button .fa-caret-down, body main .directory > button .fa-caret-up {
           color: white; }
       body main .directory ul {
         border-left: 1px solid #191d23; }
