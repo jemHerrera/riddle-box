@@ -17,7 +17,25 @@ body {
   body main {
     position: relative; }
     body main .directory {
-      position: absolute; }
+      position: absolute;
+      width: 24%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+    body main button {
+      background-color: #191d23;
+      color: white;
+      text-align: end;
+      padding: 3%; }
+      body main button .fa-caret-down {
+        color: white; }
+    body main ul li {
+      text-align: right;
+      font-size: 90%; }
   body footer {
     background-color: #191d23;
     padding: 2%; }
