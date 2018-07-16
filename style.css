@@ -15,7 +15,8 @@ body {
   body header {
     background-color: #6ad4ee; }
   body main {
-    position: relative; }
+    position: relative;
+    top: 5vh; }
     body main .directory {
       position: absolute;
       width: 24%;
