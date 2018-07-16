@@ -17,12 +17,12 @@
     </ul>
     <p>Riddle from: {{riddles[count]["source"]}}</p>
     <button ng-click='solution = !solution'>
-        show solution
+        Show solution
         <i ng-hide='solution' class="fas fa-caret-down"></i>
         <i ng-show='solution' class="fas fa-caret-up"></i>
     </button>
     <div id='solution' class='flex-column' ng-show='solution'>
-        <h2>SOLUTION</h2>
+        <h2>Solution</h2>
         <ul class='flex-column'>
             <li ng-repeat='line in riddles[count]["solution"]'>{{line}}</li>
         </ul>

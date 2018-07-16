@@ -34,11 +34,9 @@ body {
         padding: 3%; }
         body main .directory > button .fa-caret-down, body main .directory > button .fa-caret-up {
           color: white; }
-      body main .directory ul {
-        border-left: 1px solid #191d23; }
-        body main .directory ul li {
-          text-align: right;
-          font-size: 90%; }
+      body main .directory ul li {
+        text-align: right;
+        font-size: 90%; }
   body footer {
     background-color: #191d23;
     padding: 2%; }
