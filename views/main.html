@@ -11,6 +11,7 @@
     </ul>
 </section>
 <div id='problem' class='wrapper flex-column'>
+    <div class='image' style="background:url(riddles[count].image)"></div>
     <h2>{{riddles[count]["title"]}}</h2>
     <ul class='flex-column'>
         <li ng-repeat='line in riddles[count]["problem"]'>{{line}}</li>

@@ -7,7 +7,7 @@
 }, {
 	"id": 1,
 	"title": "Three Treasure Chests",
-	"problem": ["Chest 1. Labeled \"100 gold coins inside\"", "Chest 2. Labeled \"100 copper coins inside\"", "Chest 3. Labeled \"50 gold and 50 copper coins inside\"", "", "-All of them are labeled INCORRECTLY. Each label belongs to another chest.", "-You can take a sample coin from ONE of the chests.", "-While taking a sample coin, you can not take a peek inside, and you can only tell the difference between the coins by sight.", "-Which chest should you take a sample from to figure out where the 100 gold coin chest is?"],
+	"problem": ["There are three treasure chests, and all of them are labelled incorrectly. Each label belongs to another chest.","Chest 1. Labeled \"100 gold coins inside\"", "Chest 2. Labeled \"100 copper coins inside\"", "Chest 3. Labeled \"50 gold and 50 copper coins inside\"", "", "-You can take a sample coin from ONE of the chests.", "-While taking a sample coin, you can not take a peek inside, and you can only tell the difference between the coins by sight.", "-Which chest should you take a sample from to figure out where the 100 gold coin chest is?"],
 	"solution": ["Take sample from Chest 3. Since all of them are labeled incorrectly, there are two possibilities. Chest 3 can either have 100 gold coins OR 100 copper coins. If the sample you take from chest 3 is a gold coin, then you hit the jackpot. If the sample is copper, since chest 1 is NOT the 100 gold chest, then the 100 gold coins must be in chest 2."],
 	"source": "Brilliant"
 }, {
@@ -15,5 +15,6 @@
 	"title": "The Hourglass Riddle",
 	"problem": ["You are a ware-wolf. You need to brush your teeth exactly every 15 hours to prevent yourself from turning. The problem is you do not have a clock or any other means of counting the time except for two things: An 11hr hourglass and a 7hr hourglass. How do you count 15 hours out of these?"],
 	"solution": ["Let us name 11hrglass as glass-A and 7hrglass as glass-B.", "", "1. Flip both. Time starts here.", "2. Wait till glass-B runs out.", "3. 7 hours have passed. 4 hrs left on glass-A.", "4. Flip glass-B and wait till glass-A runs out.", "5. 11 hours have passed. Not warewolf yet.", "6. Glass-B has 3 hrs left. Flip glass-B.", "7. 4 hrs remaining on glass-B. When it runs-out that is 15 hours!", "8. Brush your teeth!"],
-	"source": "Popular Mechanics"
+	"source": "Popular Mechanics",
+	"image": "images/hour-glass.jpg"
 }]

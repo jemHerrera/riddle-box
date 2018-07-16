@@ -48,6 +48,8 @@ body {
       body main .directory ul.ng-hide {
         opacity: 0;
         height: 0%; }
+    body main #problem image {
+      width: 100%; }
     body main #problem h2 {
       margin: 2% 0;
       font-size: 170%; }
