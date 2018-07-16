@@ -8,38 +8,33 @@ body {
   font-size: 1.3em;
   font-weight: 400;
   min-height: 100vh;
-  color: #191d23;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between; }
+  color: #191d23; }
   body header {
     background-color: #6ad4ee; }
-  body main {
-    position: relative;
-    top: 4vh; }
-    body main .directory {
-      position: absolute;
-      width: 24%;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column; }
-      body main .directory > button {
-        background-color: #191d23;
-        color: white;
-        text-align: end;
-        padding: 3%; }
-        body main .directory > button .fa-caret-down, body main .directory > button .fa-caret-up {
-          color: white; }
-      body main .directory ul li {
-        text-align: right;
-        font-size: 90%; }
+  body main .directory {
+    position: absolute;
+    width: 24%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    body main .directory > button {
+      background-color: #191d23;
+      color: white;
+      text-align: end;
+      padding: 3%; }
+      body main .directory > button .fa-caret-down, body main .directory > button .fa-caret-up {
+        color: white; }
+    body main .directory ul li {
+      text-align: right;
+      font-size: 90%; }
   body footer {
     background-color: #191d23;
-    padding: 2%; }
+    padding: 2%;
+    margin-top: auto; }
     body footer * {
       color: white;
       font-size: 90%; }
