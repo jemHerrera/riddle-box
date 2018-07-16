@@ -13,6 +13,13 @@ body {
     background-color: #6ad4ee; }
   body main {
     margin-top: 10%; }
+    body main main.ng-enter {
+      -webkit-transition: all 200ms ease-in-out;
+      -o-transition: all 200ms ease-in-out;
+      transition: all 200ms ease-in-out;
+      opacity: 0; }
+    body main main.ng-enter.ng-enter-active {
+      opacity: 1; }
     body main .directory {
       position: absolute;
       width: 24%;
