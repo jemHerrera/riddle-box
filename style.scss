@@ -22,14 +22,6 @@ body {
     }
     main{
         margin-top: 10%;
-        //Animations
-        main.ng-enter{
-            transition: all 200ms ease-in-out;
-            opacity: 0;
-        }
-        main.ng-enter.ng-enter-active{
-            opacity:1;
-        }
 
         .directory{
             position: absolute;
@@ -142,4 +134,13 @@ body {
 .wrapper{
     margin: auto;
     width:50%;
+}
+
+//Animations
+main.ng-enter{
+    transition: all 200ms ease-in-out;
+    opacity: 0;
+}
+main.ng-enter.ng-enter-active{
+    opacity:1;
 }
