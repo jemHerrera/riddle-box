@@ -38,18 +38,22 @@ body {
                 }
             }
             ul{
+                transition: all 200ms ease-in-out;
                 li{
                     text-align: right;
                     button{
                         font-size: 80%;
                         margin: 4%;
                         color: $secondary-color;
-                        transition: color 200ms ease-in-out; 
+                        transition: color 100ms ease-in-out; 
                     }
                     button:hover{
                         color: $primary-color;
                     }
                 }
+            }
+            ul.ng-hide{
+                height: 0;
             }
         }
         #problem{
@@ -83,7 +87,7 @@ body {
                 padding: 2% 0;
                 text-align: right;
                 color: $tertiary-color;
-                transition: color 200ms ease-in-out;
+                transition: color 100ms ease-in-out;
                 margin-top: 5%;
                 &:hover{
                     color: rgb(106, 212, 238);
@@ -138,16 +142,16 @@ body {
 .primary-link{
     padding: 1% 0;
     color: $tertiary-color;
-    transition: color 200ms ease-in-out;
+    transition: color 100ms ease-in-out;
     &:hover{
         color: rgb(106, 212, 238);
     }
 }
 //Animations
-main.ng-enter, #problem.ng-enter{
+main.ng-enter{
     transition: all 200ms ease-in-out;
     opacity: 0;
 }
-main.ng-enter.ng-enter-active, #problem.ng-enter-active{
+main.ng-enter.ng-enter-active{
     opacity:1;
 }

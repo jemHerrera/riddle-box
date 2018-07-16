@@ -30,17 +30,23 @@ body {
         padding: 3%; }
         body main .directory > button .fa-caret-down, body main .directory > button .fa-caret-up {
           color: white; }
-      body main .directory ul li {
-        text-align: right; }
-        body main .directory ul li button {
-          font-size: 80%;
-          margin: 4%;
-          color: #191d23;
-          -webkit-transition: color 200ms ease-in-out;
-          -o-transition: color 200ms ease-in-out;
-          transition: color 200ms ease-in-out; }
-        body main .directory ul li button:hover {
-          color: #6ad4ee; }
+      body main .directory ul {
+        -webkit-transition: all 200ms ease-in-out;
+        -o-transition: all 200ms ease-in-out;
+        transition: all 200ms ease-in-out; }
+        body main .directory ul li {
+          text-align: right; }
+          body main .directory ul li button {
+            font-size: 80%;
+            margin: 4%;
+            color: #191d23;
+            -webkit-transition: color 100ms ease-in-out;
+            -o-transition: color 100ms ease-in-out;
+            transition: color 100ms ease-in-out; }
+          body main .directory ul li button:hover {
+            color: #6ad4ee; }
+      body main .directory ul.ng-hide {
+        height: 0; }
     body main #problem h2 {
       margin: 2% 0;
       font-size: 170%; }
@@ -61,9 +67,9 @@ body {
       padding: 2% 0;
       text-align: right;
       color: #5050507c;
-      -webkit-transition: color 200ms ease-in-out;
-      -o-transition: color 200ms ease-in-out;
-      transition: color 200ms ease-in-out;
+      -webkit-transition: color 100ms ease-in-out;
+      -o-transition: color 100ms ease-in-out;
+      transition: color 100ms ease-in-out;
       margin-top: 5%; }
       body main #problem .secondary-link:hover {
         color: #6ad4ee; }
@@ -115,17 +121,17 @@ body {
 .primary-link {
   padding: 1% 0;
   color: #5050507c;
-  -webkit-transition: color 200ms ease-in-out;
-  -o-transition: color 200ms ease-in-out;
-  transition: color 200ms ease-in-out; }
+  -webkit-transition: color 100ms ease-in-out;
+  -o-transition: color 100ms ease-in-out;
+  transition: color 100ms ease-in-out; }
   .primary-link:hover {
     color: #6ad4ee; }
 
-main.ng-enter, #problem.ng-enter {
+main.ng-enter {
   -webkit-transition: all 200ms ease-in-out;
   -o-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
   opacity: 0; }
 
-main.ng-enter.ng-enter-active, #problem.ng-enter-active {
+main.ng-enter.ng-enter-active {
   opacity: 1; }
