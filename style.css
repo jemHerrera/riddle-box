@@ -30,16 +30,17 @@ body {
         padding: 3%; }
         body main .directory > button .fa-caret-down, body main .directory > button .fa-caret-up {
           color: white; }
-      body main .directory ul li button {
-        text-align: right;
-        font-size: 80%;
-        margin: 4%;
-        color: #191d23;
-        -webkit-transition: color 200ms ease-in-out;
-        -o-transition: color 200ms ease-in-out;
-        transition: color 200ms ease-in-out; }
-      body main .directory ul li button:hover {
-        color: #6ad4ee; }
+      body main .directory ul li {
+        text-align: right; }
+        body main .directory ul li button {
+          font-size: 80%;
+          margin: 4%;
+          color: #191d23;
+          -webkit-transition: color 200ms ease-in-out;
+          -o-transition: color 200ms ease-in-out;
+          transition: color 200ms ease-in-out; }
+        body main .directory ul li button:hover {
+          color: #6ad4ee; }
     body main #problem h2 {
       margin: 2% 0;
       font-size: 170%; }
@@ -49,10 +50,14 @@ body {
       color: #5050507c;
       font-size: 80%;
       margin: 2% 0; }
+    body main #problem .show-solution {
+      text-align: left;
+      color: #6ad4ee; }
     body main #problem #solution h2 {
       color: #6ad4ee; }
     body main #problem .primary-link {
-      padding: 2% 0; }
+      padding: 2% 0;
+      text-align: right; }
   body footer {
     background-color: #191d23;
     padding: 2%;
