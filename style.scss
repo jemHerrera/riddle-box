@@ -20,6 +20,13 @@ body {
     header{
         background-color: $primary-color;
     }
+    main{
+        position: relative;
+        .directory{
+            position: absolute;
+
+        }
+    }
     footer{
         background-color: $secondary-color;
         padding: 2%;

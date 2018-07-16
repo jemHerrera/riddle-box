@@ -14,6 +14,10 @@ body {
   justify-content: space-between; }
   body header {
     background-color: #6ad4ee; }
+  body main {
+    position: relative; }
+    body main .directory {
+      position: absolute; }
   body footer {
     background-color: #191d23;
     padding: 2%; }
