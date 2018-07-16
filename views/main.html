@@ -1,8 +1,8 @@
 <section class='directory'>
     <button ng-click='directory = !directory' class='directory-btn'>
         Directory
-        <i ng-show='directory = false' class="fas fa-caret-down"></i>
-        <i ng-show='directory = true' class="fas fa-caret-up"></i>
+        <i ng-hide='directory' class="fas fa-caret-down"></i>
+        <i ng-show='directory' class="fas fa-caret-up"></i>
     </button>
     <ul class='directory-list' ng-show='directory'>
         <li ng-repeat='riddle in riddles'>
@@ -18,8 +18,8 @@
     <p>Riddle from: {{riddles[count]["source"]}}</p>
     <button ng-click='solution = !solution'>
         show solution
-        <i ng-show='solution = false' class="fas fa-caret-down"></i>
-        <i ng-show='solution = true' class="fas fa-caret-up"></i>
+        <i ng-hide='solution' class="fas fa-caret-down"></i>
+        <i ng-show='solution' class="fas fa-caret-up"></i>
     </button>
     <div id='solution' class='flex-column' ng-show='solution'>
         <h2>SOLUTION</h2>
