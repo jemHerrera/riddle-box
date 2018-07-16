@@ -17,6 +17,10 @@ controllers.mainController =  ['$scope', '$http', function($scope, $http){
     $http.get('data/riddles.json').then(function(response){
         $scope.riddles = response.data;
     });
+    $scope.imageStyle = {
+        "background": "url($scope.riddles[$scope.count]['image'])",
+        "background-size": "contain"
+    }
     $scope.count = 0;
     $scope.directory = false;
     $scope.solution = false;
