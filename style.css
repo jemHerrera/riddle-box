@@ -1,74 +1,71 @@
 *, *:after, *:before {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 body {
   background: url("images/grey-prism.svg") repeat;
-  font-family: "Ubuntu Mono", sans-serif;
+  font-family: 'Ubuntu Mono', sans-serif;
   font-size: 1.3em;
   font-weight: 400;
   min-height: 100vh;
   color: #191d23;
-  justify-content: space-between;
-}
-body header {
-  background-color: #6ad4ee;
-}
-body footer {
-  background-color: #191d23;
-  padding: 2%;
-}
-body footer * {
-  color: white;
-  font-size: 90%;
-}
-body footer * p {
-  margin-bottom: 2%;
-}
-body h1 {
-  font-family: "Pacifico", cursive;
-}
-body button, body button:active {
-  border: none;
-  outline: none;
-  background: none;
-  cursor: pointer;
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: 300;
-}
-body li {
-  list-style: none;
-}
-body a {
-  text-decoration: none;
-  color: inherit;
-}
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  body header {
+    background-color: #6ad4ee; }
+  body footer {
+    background-color: #191d23;
+    padding: 2%; }
+    body footer * {
+      color: white;
+      font-size: 90%; }
+      body footer * p {
+        margin-bottom: 2%; }
+  body h1 {
+    font-family: 'Pacifico', cursive; }
+  body button, body button:active {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 300; }
+  body li {
+    list-style: none; }
+  body a {
+    text-decoration: none;
+    color: inherit; }
 
 .flex-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-}
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
 
 .flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-}
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
 
 .wrapper {
   margin: auto;
-  width: 50%;
-}
+  width: 50%; }
 
 .primary-link {
   color: #5050507c;
+  -webkit-transition: color 200ms ease-in-out;
+  -o-transition: color 200ms ease-in-out;
   transition: color 200ms ease-in-out;
-  margin-top: 5%;
-}
+  margin-top: 5%; }
 
 .primary-link:hover {
-  color: #6ad4ee;
-}
-
-/*# sourceMappingURL=style.css.map */
+  color: #6ad4ee; }
