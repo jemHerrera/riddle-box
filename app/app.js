@@ -18,7 +18,7 @@ controllers.mainController =  ['$scope', '$http', function($scope, $http){
         $scope.riddles = response.data;
     });
     $scope.imageStyle = {
-        "background": `url("${$scope.riddles[$scope.count]['image']}")`,
+        "background": "url("+ $scope.riddles[$scope.count]['image'] + ")no-repeat",
         "background-size": "contain"
     }
     $scope.count = 0;
