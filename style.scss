@@ -79,7 +79,7 @@ body {
                     color: $primary-color;
                 }
             }
-            .primary-link{
+            .secondary-link{
                 padding: 2% 0;
                 text-align: right;
                 color: $tertiary-color;
@@ -135,7 +135,14 @@ body {
     margin: auto;
     width:50%;
 }
-
+.primary-link{
+    padding: 1% 0;
+    color: $tertiary-color;
+    transition: color 200ms ease-in-out;
+    &:hover{
+        color: rgb(106, 212, 238);
+    }
+}
 //Animations
 main.ng-enter{
     transition: all 200ms ease-in-out;

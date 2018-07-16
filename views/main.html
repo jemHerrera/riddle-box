@@ -26,6 +26,6 @@
             <li ng-repeat='line in riddles[count]["solution"]'>{{line}}</li>
         </ul>
     </div>
-    <button class='primary-link' ng-hide='count == riddles.length-1' ng-click='count = count + 1; solution = false; directory = false'>next riddle</button>
+    <button class='secondary-link' ng-hide='count == riddles.length-1' ng-click='count = count + 1; solution = false; directory = false'>next riddle</button>
 </div>
 

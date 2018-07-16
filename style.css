@@ -57,7 +57,7 @@ body {
       margin-bottom: 10%; }
     body main #problem #solution h2 {
       color: #6ad4ee; }
-    body main #problem .primary-link {
+    body main #problem .secondary-link {
       padding: 2% 0;
       text-align: right;
       color: #5050507c;
@@ -65,7 +65,7 @@ body {
       -o-transition: color 200ms ease-in-out;
       transition: color 200ms ease-in-out;
       margin-top: 5%; }
-      body main #problem .primary-link:hover {
+      body main #problem .secondary-link:hover {
         color: #6ad4ee; }
   body footer {
     background-color: #191d23;
@@ -111,6 +111,15 @@ body {
 .wrapper {
   margin: auto;
   width: 50%; }
+
+.primary-link {
+  padding: 1% 0;
+  color: #5050507c;
+  -webkit-transition: color 200ms ease-in-out;
+  -o-transition: color 200ms ease-in-out;
+  transition: color 200ms ease-in-out; }
+  .primary-link:hover {
+    color: #6ad4ee; }
 
 main.ng-enter {
   -webkit-transition: all 200ms ease-in-out;
