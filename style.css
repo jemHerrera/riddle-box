@@ -11,26 +11,41 @@ body {
   color: #191d23; }
   body header {
     background-color: #6ad4ee; }
-  body main .directory {
-    position: absolute;
-    width: 24%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column; }
-    body main .directory > button {
-      background-color: #191d23;
-      color: white;
-      text-align: end;
-      padding: 3%; }
-      body main .directory > button .fa-caret-down, body main .directory > button .fa-caret-up {
-        color: white; }
-    body main .directory ul li {
-      text-align: right;
-      font-size: 90%; }
+  body main {
+    margin-top: 10%; }
+    body main .directory {
+      position: absolute;
+      width: 24%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      body main .directory > button {
+        background-color: #191d23;
+        color: white;
+        text-align: end;
+        padding: 3%; }
+        body main .directory > button .fa-caret-down, body main .directory > button .fa-caret-up {
+          color: white; }
+      body main .directory ul li {
+        text-align: right;
+        font-size: 90%; }
+    body main #problem h2 {
+      margin: 2% 0;
+      font-size: 170%; }
+    body main #problem ul li {
+      min-height: 1.3em; }
+    body main #problem p {
+      color: #5050507c;
+      margin-bottom: 2%;
+      margin: 2% 0; }
+    body main #problem #solution {
+      color: #6ad4ee; }
+    body main #problem .primary-link {
+      position: absolute; }
   body footer {
     background-color: #191d23;
     padding: 2%;
@@ -38,8 +53,6 @@ body {
     body footer * {
       color: white;
       font-size: 90%; }
-      body footer * p {
-        margin-bottom: 2%; }
   body h1 {
     font-family: 'Pacifico', cursive; }
   body button, body button:active {

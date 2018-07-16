@@ -1,7 +1,9 @@
 // Variables
 
 $primary-color: rgb(106, 212, 238);
-$secondary-color: #191d23; 
+$secondary-color: #191d23;
+$tertiary-color: #5050507c;
+$font-size: 1.3em;
 
 
 *, *:after, *:before{
@@ -19,7 +21,7 @@ body {
         background-color: $primary-color;
     }
     main{
-
+        margin-top: 10%;
         .directory{
             position: absolute;
             width: 24%;
@@ -41,6 +43,28 @@ body {
                 }
             }
         }
+        #problem{
+            h2{
+                margin: 2% 0;
+                font-size: 170%;
+            }
+            ul{
+                li{
+                    min-height: $font-size;
+                }
+            }
+            p{
+                color: $tertiary-color;
+                margin-bottom: 2%;
+                margin: 2% 0;
+            }
+            #solution{
+                color: $primary-color;
+            }
+            .primary-link{
+                position:absolute;
+            }
+        }
     }
     footer{
         background-color: $secondary-color;
@@ -50,10 +74,6 @@ body {
         *{
             color: white;
             font-size: 90%;
-            
-            p{
-                margin-bottom: 2%;
-            }
         }
     }
     h1{
@@ -89,7 +109,7 @@ body {
     width:50%;
 }
 .primary-link{
-    color: #5050507c;
+    color: $tertiary-color;
     transition: color 200ms ease-in-out;
     margin-top: 5%;
     &:hover{
