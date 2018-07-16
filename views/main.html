@@ -1,24 +1,28 @@
-<div>
-    <button ng-click='directory = !directory' class='directory-btn'>Directory</button>
-    <ul class='directory-list' ng-show='directory'>
-        <li ng-repeat='riddle in riddles'>
-            <button ng-click='getScope().count = riddle["id"]; getScope().solution = false; getScope().directory = false;'>{{riddle['title']}}</button>
-        </li>
-    </ul>
-</div>
-<div id='problem' class='flex-column'>
-    <h2>{{riddles[count]["title"]}}</h2>
-    <ul class='flex-column'>
-        <li ng-repeat='line in riddles[count]["problem"]'>{{line}}</li>
-    </ul>
-    <p>Riddle from: {{riddles[count]["source"]}}</p>
-    <button ng-click='solution = !solution'>SHOW SOLUTION</button>
-    <div id='solution' class='flex-column' ng-show='solution'>
-        <h2>SOLUTION</h2>
-        <ul class='flex-column'>
-            <li ng-repeat='line in riddles[count]["solution"]'>{{line}}</li>
+<main class='wrapper flex-column'>
+    <div>
+        <button ng-click='directory = !directory' class='directory-btn'>Directory</button>
+        <ul class='directory-list' ng-show='directory'>
+            <li ng-repeat='riddle in riddles'>
+                <button ng-click='getScope().count = riddle["id"]; getScope().solution = false; getScope().directory = false;'>{{riddle['title']}}</button>
+            </li>
         </ul>
     </div>
-    <button ng-hide='count == 0' ng-click='count = count - 1; solution = false; directory = false'>PREVIOUS RIDDLE</button>
-    <button ng-hide='count == riddles.length-1' ng-click='count = count + 1; solution = false; directory = false'>NEXT RIDDLE</button>
-</div>
+    <div id='problem' class='flex-column'>
+        <h2>{{riddles[count]["title"]}}</h2>
+        <ul class='flex-column'>
+            <li ng-repeat='line in riddles[count]["problem"]'>{{line}}</li>
+        </ul>
+        <p>Riddle from: {{riddles[count]["source"]}}</p>
+        <button ng-click='solution = !solution'>SHOW SOLUTION</button>
+        <div id='solution' class='flex-column' ng-show='solution'>
+            <h2>SOLUTION</h2>
+            <ul class='flex-column'>
+                <li ng-repeat='line in riddles[count]["solution"]'>{{line}}</li>
+            </ul>
+        </div>
+        <div class = 'flex-row'>
+            <button class='primary-link' ng-hide='count == 0' ng-click='count = count - 1; solution = false; directory = false'>previous</button>
+            <button class='primary-link' ng-hide='count == riddles.length-1' ng-click='count = count + 1; solution = false; directory = false'>next riddle</button>
+        </div>
+    </div>
+</main>
