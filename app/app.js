@@ -20,10 +20,10 @@ controllers.mainController =  ['$scope', '$http', function($scope, $http){
     $scope.count = 0;
     $scope.directory = false;
     $scope.solution = false;
-    $scope.imageStyle = {
-        "background": "url("+ $scope.riddles[$scope.count]['image'] + ")no-repeat",
-        "background-size": "contain"
-    }
+    // $scope.imageStyle = {
+    //     "background": "url("+ $scope.riddles[$scope.count]['image'] + ")no-repeat",
+    //     "background-size": "contain"
+    // }
 
     $scope.getScope = () => $scope;
 }];
