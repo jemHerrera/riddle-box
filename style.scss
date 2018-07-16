@@ -144,10 +144,10 @@ body {
     }
 }
 //Animations
-main.ng-enter{
+main.ng-enter, #problem.ng-enter{
     transition: all 200ms ease-in-out;
     opacity: 0;
 }
-main.ng-enter.ng-enter-active{
+main.ng-enter.ng-enter-active, #problem.ng-enter-active{
     opacity:1;
 }

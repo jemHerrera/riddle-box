@@ -121,11 +121,11 @@ body {
   .primary-link:hover {
     color: #6ad4ee; }
 
-main.ng-enter {
+main.ng-enter, #problem.ng-enter {
   -webkit-transition: all 200ms ease-in-out;
   -o-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
   opacity: 0; }
 
-main.ng-enter.ng-enter-active {
+main.ng-enter.ng-enter-active, #problem.ng-enter-active {
   opacity: 1; }
