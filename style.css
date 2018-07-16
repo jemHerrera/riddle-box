@@ -26,16 +26,18 @@ body {
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column; }
-    body main button {
-      background-color: #191d23;
-      color: white;
-      text-align: end;
-      padding: 3%; }
-      body main button .fa-caret-down {
-        color: white; }
-    body main ul li {
-      text-align: right;
-      font-size: 90%; }
+      body main .directory > button {
+        background-color: #191d23;
+        color: white;
+        text-align: end;
+        padding: 3%; }
+        body main .directory > button .fa-caret-down {
+          color: white; }
+      body main .directory ul {
+        border-left: 1px solid #191d23; }
+        body main .directory ul li {
+          text-align: right;
+          font-size: 90%; }
   body footer {
     background-color: #191d23;
     padding: 2%; }
@@ -88,6 +90,5 @@ body {
   -o-transition: color 200ms ease-in-out;
   transition: color 200ms ease-in-out;
   margin-top: 5%; }
-
-.primary-link:hover {
-  color: #6ad4ee; }
+  .primary-link:hover {
+    color: #6ad4ee; }

@@ -16,32 +16,32 @@ body {
     min-height: 100vh;
     color: $secondary-color;
     justify-content: space-between;
-
     header{
         background-color: $primary-color;
     }
     main{
         position: relative;
+
         .directory{
             position: absolute;
             width: 24%;
             display: flex;
-            flex-direction: column;        
-        }
-        button{
-            background-color: #191d23;
-            color: white;
-            text-align: end;
-            padding: 3%;
-
-            .fa-caret-down{
+            flex-direction: column; 
+            > button{
+                background-color: #191d23;
                 color: white;
+                text-align: end;
+                padding: 3%;
+                .fa-caret-down{
+                    color: white;
+                }
             }
-        }
-        ul{
-            li{
-                text-align: right;
-                font-size: 90%;
+            ul{
+                border-left: 1px solid $secondary-color;
+                li{
+                    text-align: right;
+                    font-size: 90%;
+                }
             }
         }
     }
@@ -94,7 +94,8 @@ body {
     color: #5050507c;
     transition: color 200ms ease-in-out;
     margin-top: 5%;
+    &:hover{
+        color: rgb(106, 212, 238);
+    }
 }
-.primary-link:hover{
-    color: rgb(106, 212, 238);
-}
+
