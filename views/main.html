@@ -18,8 +18,8 @@
     <p>Riddle from: {{riddles[count]["source"]}}</p>
     <button ng-click='solution = !solution'>
         show solution
-        <i ng-show='directory = false' class="fas fa-caret-down"></i>
-        <i ng-show='directory = true' class="fas fa-caret-up"></i>
+        <i ng-show='solution = false' class="fas fa-caret-down"></i>
+        <i ng-show='solution = true' class="fas fa-caret-up"></i>
     </button>
     <div id='solution' class='flex-column' ng-show='solution'>
         <h2>SOLUTION</h2>
