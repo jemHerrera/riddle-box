@@ -83,10 +83,6 @@ body {
                 h2{
                     color: $primary-color;
                 }
-                transition: all 50ms ease-in-out;
-            }
-            #solution.ng-hide{
-                opacity: 0;
             }
             .secondary-link{
                 padding: 2% 0;

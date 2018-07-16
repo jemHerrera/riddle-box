@@ -2,13 +2,13 @@
 	"id": 0,
 	"title": "Wrong Statements",
 	"problem": ["Statement 1. There is exactly one wrong statement in this list.", "Statement 2. There are exactly two wrong statements in this list.", "Statement 3. There are exactly three wrong statements in this list.", "", "How many wrong statements are in the list above?"],
-	"solution": ["There are two wrong statements in the list above. Since all the statements say \"exactly\", only one of these statements can be correct. And that means the other two must be wrong."],
+	"solution": ["There are two wrong statements in the list above. The third statement contradicts itself, making it a wrong statement. First statement says that there is exactly one wrong statement in the list, meaning the other two must be correct statements. But since all the statements say \"exactly\", only one of these statements can be correct, thus making statement two correct."],
 	"source": "Brilliant"
 }, {
 	"id": 1,
 	"title": "Three Treasure Chests",
 	"problem": ["Chest 1. Labeled \"100 gold coins inside\"", "Chest 2. Labeled \"100 copper coins inside\"", "Chest 3. Labeled \"50 gold and 50 copper coins inside\"", "", "-All of them are labeled INCORRECTLY. Each label belongs to another chest.", "-You can take a sample coin from ONE of the chests.", "-While taking a sample coin, you can not take a peek inside, and you can only tell the difference between the coins by sight.", "-Which chest should you take a sample from to figure out where the 100 gold coin chest is?"],
-	"solution": ["1. Take sample from Chest 3.", "2. Since all of them are labeled incorrectly, there are two possibilities. Chest 3 can either have 100 gold coins OR 100 copper coins.", "3. If the sample you take from chest 3 is a gold coin, then you hit the jackpot.", "4. If the sample is copper, since chest 1 is NOT the 100 gold chest, then the 100 gold coins must be in chest 2."],
+	"solution": ["Take sample from Chest 3. Since all of them are labeled incorrectly, there are two possibilities. Chest 3 can either have 100 gold coins OR 100 copper coins. If the sample you take from chest 3 is a gold coin, then you hit the jackpot. If the sample is copper, since chest 1 is NOT the 100 gold chest, then the 100 gold coins must be in chest 2."],
 	"source": "Brilliant"
 }, {
 	"id": 2,

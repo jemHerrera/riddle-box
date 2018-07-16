@@ -60,16 +60,10 @@ body {
     body main #problem .show-solution {
       text-align: left;
       color: #6ad4ee; }
-    body main #problem #solution {
-      -webkit-transition: all 50ms ease-in-out;
-      -o-transition: all 50ms ease-in-out;
-      transition: all 50ms ease-in-out; }
-      body main #problem #solution ul {
-        margin-bottom: 10%; }
-      body main #problem #solution h2 {
-        color: #6ad4ee; }
-    body main #problem #solution.ng-hide {
-      opacity: 0; }
+    body main #problem #solution ul {
+      margin-bottom: 10%; }
+    body main #problem #solution h2 {
+      color: #6ad4ee; }
     body main #problem .secondary-link {
       padding: 2% 0;
       text-align: right;
