@@ -32,7 +32,14 @@ body {
           color: white; }
       body main .directory ul li {
         text-align: right;
-        font-size: 90%; }
+        font-size: 80%;
+        margin: 4%;
+        color: #191d23;
+        -webkit-transition: color 200ms ease-in-out;
+        -o-transition: color 200ms ease-in-out;
+        transition: color 200ms ease-in-out; }
+      body main .directory ul li:hover {
+        color: #6ad4ee; }
     body main #problem h2 {
       margin: 2% 0;
       font-size: 170%; }
@@ -40,12 +47,12 @@ body {
       min-height: 1.3em; }
     body main #problem p {
       color: #5050507c;
-      margin-bottom: 2%;
+      font-size: 1.3em;
       margin: 2% 0; }
-    body main #problem #solution {
+    body main #problem #solution h2 {
       color: #6ad4ee; }
     body main #problem .primary-link {
-      position: absolute; }
+      padding: 5%; }
   body footer {
     background-color: #191d23;
     padding: 2%;
