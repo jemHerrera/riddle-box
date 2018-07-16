@@ -47,12 +47,12 @@ body {
       min-height: 1.3em; }
     body main #problem p {
       color: #5050507c;
-      font-size: 1.3em;
+      font-size: 80%;
       margin: 2% 0; }
     body main #problem #solution h2 {
       color: #6ad4ee; }
     body main #problem .primary-link {
-      padding: 5%; }
+      padding: 2% 0; }
   body footer {
     background-color: #191d23;
     padding: 2%;
