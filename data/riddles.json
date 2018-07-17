@@ -31,7 +31,7 @@
 },{
 	"id": 5,
 	"title": "Adam and Eve Play Rock, Paper, Scissors",
-	"problem": ["Adam and Eve play rock-paper-scissors 10 times. You know that:","Adam uses rock three times, scissors six times, and paper once.","Eve uses rock twice, scissors four times, and paper four times.","There are no ties in all 10 games, and the order of games is unknown","Who wins? By how much?"],
+	"problem": ["Adam and Eve play rock-paper-scissors 10 times. You know that:", "", "Adam uses rock three times, scissors six times, and paper once.", "Eve uses rock twice, scissors four times, and paper four times.", "There are no ties in all 10 games, and the order of games is unknown", "", "Who wins? By how much?"],
 	"solution": ["The key to solving this riddle is realizing that Adam played scissors six times. Because there were no ties, that means Eve didn't play scissors in any of those six games. Now look at the various hands Eve did play. Because she played scissors four times, and none of those could line up with one of the six times Adam played scissors, she must have played all six of her other hands on Adam's six scissors. Tally it all up, and Adam wins, 7 to 3."],
 	"source": "Popular Mechanics"
 }]
