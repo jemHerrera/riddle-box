@@ -1,20 +1,62 @@
 [{
 	"id": 0,
+	"title": "Two Doors",
+	"problem": ["You wake up in an empty room with only 2 doors. Each door has a key-hole where you can peek through. Door A is guarded by a dragon that will incinerate anyone it sees. Door B is simply a hallway, with an odd ceiling, it's the strongest magnifying glass on earth! It magnifies the sun so strong it'll burn you to a crisp the second you leave.","","How do you escape?"],
+	"solution": ["Wait till night-time and walk across the hallway from door B."],
+	"source": "Puzzling"
+},{
+	"id": 1,
+	"title": "A Deal With the Devil",
+	"problem": ["One day, while walking home from work, the devil pays you a visit. He has a proposition, and afraid to insult him, you agree to listen.","","\"I have two 100 dollar bills, and I am going to give both of them to you,\" says Lucifer with a sly grin. \"Then I am going to make a statement. If the statement is false, then you give me back just one of the 100 dollar bills. If the statement is true, then you keep them both. Do we have a deal?\"","","Seeing nothing but profit in the proposal, you agree to the deal, and shake hands with the devil. Satan hands you two crisp 100 dollar bills and makes his statement.","","After he does, you owe the devil one million dollars. What did he say?"],
+	"solution": ["\"You will either give me one of those 100 dollar bills or you will give me one million dollars.\"","Now, you're trapped by logic. If you were to give the devil one of the 100 dollar bills, you would make the statement true. But, by doing so, you would violate the initial conditions of the agreement. Remember, the devil said, \"If the statement is true, then you keep them both.\" This is a deal with the devil, so the phrasing of the initial agreement is binding.","","You might be thinking that you can give the devil a different amount, like $110 for example. This would make the statement false, allowing you to give him back one of the $100 bills without violating the agreement. But remember, he said, \"If the statement is false, then you give me back just one of the 100 dollar bills.\"","","The genius of Satan's play here is that he takes a scenario that appears to have two choices and twists it so that only one of them adheres to the rules of the game, leaving you only one choice. You cannot give him a $100 bill without violating the first part of the agreement, and you cannot give him any amount other than $100 or $1,000,000 without violating the second part of the agreement. Therefore you have but one option: Pay the devil one million dollars."],
+	"source": "Popular Mechanics"
+},{
+	"id": 2,
+	"title": "Adam and Eve Play Rock, Paper, Scissors",
+	"problem": ["Adam and Eve play rock-paper-scissors 10 times. You know that:","","1. Adam uses rock three times, scissors six times, and paper once.","2. Eve uses rock twice, scissors four times, and paper four times.","3.There are no ties in all 10 games, and the order of games is unknown","","Who wins? By how much?"],
+	"solution": ["The key to solving this riddle is realizing that Adam played scissors six times. Because there were no ties, that means Eve didn't play scissors in any of those six games. Now look at the various hands Eve did play. Because she played scissors four times, and none of those could line up with one of the six times Adam played scissors, she must have played all six of her other hands on Adam's six scissors. Tally it all up, and Adam wins, 7 to 3."],
+	"source": "Popular Mechanics"
+},{
+	"id": 3,
+	"title": "Entrance to the Thieves Guild",
+	"problem": ["A businessman, for personal reasons of his own, needs to gain access to a notorious but elusive thieves guild. After snooping around the city for a few days, he finally gets a tip about the location of the guild entrance down a dark alleyway.","","After observing the entrance for about an hour, the businessman notices that the thieves seem to have some sort of passcode system using numbers. When someone approaches the door, they are given a number, and then they reply with a number.","","The first person steps up, and the guard tells them \"twelve,\" to which they respond \"six.\" The person is admitted. A second person approaches the door, and the guard tells them \"six,\" to which they reply \"three.\" The second person is also admitted.","","Convinced that he has cracked the code, the businessman approaches the door to the thieves guild, and the guard tells him \"ten,\" to which he confidently replies \"five.\" The guard immediately slams the door in the businessman's face, and a deadbolt slots into place.","","What should the businessman have said?"],
+	"solution": ["The businessman should have said \"three,\" the number of letters in \"ten.\" Similarly, \"twelve\" has six letters, and \"six\" has three letters, the answers the first two thieves gave."],
+	"source": "Popular Mechanics"
+},{
+	"id": 4,
 	"title": "Wrong Statements",
 	"problem": ["Statement 1. There is exactly one wrong statement in this list.", "Statement 2. There are exactly two wrong statements in this list.", "Statement 3. There are exactly three wrong statements in this list.", "", "How many wrong statements are in the list above?"],
 	"solution": ["There are two wrong statements in the list above. The third statement contradicts itself, making it a wrong statement. First statement says that there is exactly one wrong statement in the list, meaning the other two must be correct statements. But since all the statements say \"exactly\", only one of these statements can be correct, thus making statement two correct."],
 	"source": "Brilliant"
-}, {
-	"id": 1,
+},{
+	"id": 5,
+	"title": "Le Havre to New York",
+	"problem": ["Every day at noon an ocean liner leaves Le Havre to sail for New York, and (simultaneously) an ocean liner sails from New York to Le Havre. The crossing takes exactly seven days and seven nights in either direction. How many other ocean liners will an ocean liner leaving Le Havre today pass at sea before arriving in New York?","","If you're wondering whether a ship casting off from harbor just as another arrives counts as a \"pass at sea,\" yes, the solution does count these encounters."],
+	"solution": ["The answer is 15 ocean liners. When one sets sail from Le Havre, there are 6 other ocean liners already at sea that set out from New York. In addition to these, 7 more ocean liners will leave New York during the voyage, including the ship that leaves simultaneously from New York as our ship casts off from Le Havre. So a ship leaving Le Havre \"today\" will see 13 other ships in the ocean. In addition to these, it will cross paths with another ship as it casts off from Le Havre, and yet another as soon as it arrives in New York, adding 2 more. An ocean liner leaving Le Havre on any given day will pass 15 other ocean liners on its way to New York."],
+	"source": "Popular Mechanics"
+},{
+	"id": 6,
 	"title": "Three Treasure Chests",
-	"problem": ["There are three treasure chests, and all of them are labelled incorrectly. Each label belongs to another chest.","Chest 1. Labeled \"100 gold coins inside\"", "Chest 2. Labeled \"100 copper coins inside\"", "Chest 3. Labeled \"50 gold and 50 copper coins inside\"", "", "-You can take a sample coin from ONE of the chests.", "-While taking a sample coin, you can not take a peek inside, and you can only tell the difference between the coins by sight.", "-Which chest should you take a sample from to figure out where the 100 gold coin chest is?"],
+	"problem": ["There are three treasure chests, and all of them are labelled incorrectly. Each label belongs to another chest.","","Chest 1. Labeled \"100 gold coins inside\"", "Chest 2. Labeled \"100 copper coins inside\"", "Chest 3. Labeled \"50 gold and 50 copper coins inside\"", "", "-You can take a sample coin from ONE of the chests.", "-While taking a sample coin, you can not take a peek inside, and you can only tell the difference between the coins by sight.", "-Which chest should you take a sample from to figure out where the 100 gold coin chest is?"],
 	"solution": ["Take sample from Chest 3. Since all of them are labeled incorrectly, there are two possibilities. Chest 3 can either have 100 gold coins OR 100 copper coins. If the sample you take from chest 3 is a gold coin, then you hit the jackpot. If the sample is copper, since chest 1 is NOT the 100 gold chest, then the 100 gold coins must be in chest 2."],
 	"source": "Brilliant"
-}, {
-	"id": 2,
+},{
+	"id": 7,
+	"title": "Consecutive Numbers",
+	"problem": ["A professor thinks of two consecutive numbers between(and including) 1 and 10. 'Student-A' knows the 1st number while 'Student-B' knows the second number","","Student-A:\"I do not know your number.\"","Student-B:\"Neither do I know your number.\"","Student-A:\"Now I know!\"","","What are their numbers? Note: There are four possible solutions to this."],
+	"solution": ["The four possible solutions are: 2-3, 3-4, 8-7 and 9-8","","In 2-3 scenario, Student-A knows that Student-B's number is either 1 or 3, but since Student-B is also unsure, Student-B's number must not be 1 but 3. The same logic goes for 9-8.","In 3-4 scenario, Student-B's number is either 2 or 4. If Student-B's number is 2, Student-A's number must either be 1 or 3. If Student-A is unsure of Student-B's number, Student-B should know that Student-A's number is 3. But Student-B still does not know Student-A's number, giving Student-A enough clue that Student-B's number is 4. This logic works the same way in 8-7 scenario."],
+	"source": "Briddles"
+},{
+	"id": 8,
 	"title": "The Hourglass Riddle",
 	"problem": ["You are a ware-wolf. You need to brush your teeth exactly every 15 hours to prevent yourself from turning. The problem is you do not have a clock or any other means of counting the time except for two things: An 11hr hourglass and a 7hr hourglass. How do you count 15 hours out of these?"],
 	"solution": ["Let us name 11hrglass as glass-A and 7hrglass as glass-B.", "", "1. Flip both. Time starts here.", "2. Wait till glass-B runs out.", "3. 7 hours have passed. 4 hrs left on glass-A.", "4. Flip glass-B and wait till glass-A runs out.", "5. 11 hours have passed. Not warewolf yet.", "6. Glass-B has 3 hrs left. Flip glass-B.", "7. 4 hrs remaining on glass-B. When it runs-out that is 15 hours!", "8. Brush your teeth!"],
-	"source": "Popular Mechanics",
-	"image": "images/hour-glass.jpg"
+	"source": "Popular Mechanics"
+}
+,{
+	"id": 9,
+	"title": "8Digits",
+	"problem": ["Create a number using only the digits 4,4,3,3,2,2,1 and 1 so it can only be eight digits. You have to make sure the ones are separated by one digit, the twos are separated by two digits the threes are separated with three digits and the fours are separated by four digits"],
+	"solution": ["41312432"],
+	"source": "Puzzling"
 }]
