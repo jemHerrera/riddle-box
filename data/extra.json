@@ -28,4 +28,10 @@
 	"problem": ["A professor thinks of two consecutive numbers between(and including) 1 and 10. 'Student-A' knows the 1st number while 'Student-B' knows the second number","","Student-A:\"I do not know your number.\"","Student-B:\"Neither do I know your number.\"","Student-A:\"Now I know!\"","","What are their numbers? Note: There are four possible solutions to this."],
 	"solution": ["The four possible solutions are: 2-3, 3-4, 8-7 and 9-8","","In 2-3 scenario, Student-A knows that Student-B's number is either 1 or 3, but since Student-B is also unsure, Student-B's number must not be 1 but 3. The same logic goes for 9-8.","","In 3-4 scenario, Student-B's number is either 2 or 4. If Student-B's number is 2, Student-A's number must either be 1 or 3. If Student-A is unsure of Student-B's number, Student-B should know that Student-A's number is 3. But Student-B still does not know Student-A's number, giving Student-A enough clue that Student-B's number is 4. This logic works the same way in 8-7 scenario."],
 	"source": "Briddles"
+},{
+	"id": 5,
+	"title": "Adam and Eve Play Rock, Paper, Scissors",
+	"problem": ["Adam and Eve play rock-paper-scissors 10 times. You know that:","","1. Adam uses rock three times, scissors six times, and paper once.","2. Eve uses rock twice, scissors four times, and paper four times.","3.There are no ties in all 10 games, and the order of games is unknown","","Who wins? By how much?"],
+	"solution": ["The key to solving this riddle is realizing that Adam played scissors six times. Because there were no ties, that means Eve didn't play scissors in any of those six games. Now look at the various hands Eve did play. Because she played scissors four times, and none of those could line up with one of the six times Adam played scissors, she must have played all six of her other hands on Adam's six scissors. Tally it all up, and Adam wins, 7 to 3."],
+	"source": "Popular Mechanics"
 }]
