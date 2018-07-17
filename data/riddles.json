@@ -1,12 +1,11 @@
-// [{
-// 	"id": 0,
-// 	"title": "Two Doors",
-// 	"problem": ["You wake up in an empty room with only 2 doors. Each door has a key-hole where you can peek through. Door A is guarded by a dragon that will incinerate anyone it sees. Door B is simply a hallway, with an odd ceiling, it's the strongest magnifying glass on earth! It magnifies the sun so strong it'll burn you to a crisp the second you leave.","","How do you escape?"],
-// 	"solution": ["Wait until night and walk across the hallway from door B."],
-// 	"source": "Puzzling"
-// },
 [{
 	"id": 1,
+	"title": "Two Doors",
+	"problem": ["You wake up in an empty room with only 2 doors. Each door has a key-hole where you can peek through. Door A is guarded by a dragon that will incinerate anyone it sees. Door B is simply a hallway, with an odd ceiling, it's the strongest magnifying glass on earth! It magnifies the sun so strong it'll burn you to a crisp the second you leave.","","How do you escape?"],
+	"solution": ["Wait until night and walk across the hallway from door B."],
+	"source": "Puzzling"
+},{
+	"id": 0,
 	"title": "A Deal With the Devil",
 	"problem": ["One day, while walking home from work, the devil pays you a visit. He has a proposition, and afraid to insult him, you agree to listen.","","\"I have two 100 dollar bills, and I am going to give both of them to you\", says Lucifer with a sly grin. \"Then I am going to make a statement. If the statement is false, then you give me back just one of the 100 dollar bills. If the statement is true, then you keep them both. Do we have a deal?\"","","Seeing nothing but profit in the proposal, you agree to the deal, and shake hands with the devil. Satan hands you two crisp 100 dollar bills and makes his statement.","","After he does, you owe the devil one million dollars. What did he say?"],
 	"solution": ["\"You will either give me one of those 100 dollar bills or you will give me one million dollars.\"","Now, you're trapped by logic. If you were to give the devil one of the 100 dollar bills, you would make the statement true. But, by doing so, you would violate the initial conditions of the agreement. Remember, the devil said, \"If the statement is true, then you keep them both.\" This is a deal with the devil, so the phrasing of the initial agreement is binding.","","You might be thinking that you can give the devil a different amount, like $110 for example. This would make the statement false, allowing you to give him back one of the $100 bills without violating the agreement. But remember, he said, \"If the statement is false, then you give me back just one of the 100 dollar bills.\"","","The genius of Satan's play here is that he takes a scenario that appears to have two choices and twists it so that only one of them adheres to the rules of the game, leaving you only one choice. You cannot give him a $100 bill without violating the first part of the agreement, and you cannot give him any amount other than $100 or $1,000,000 without violating the second part of the agreement. Therefore you have but one option: Pay the devil one million dollars."],
