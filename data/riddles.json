@@ -5,25 +5,25 @@
 	"solution": ["Wait until night and walk across the hallway from door B."],
 	"source": "Puzzling"
 },{
-	"id": 4,
+	"id": 1,
 	"title": "Wrong Statements",
 	"problem": ["Statement 1. There is exactly one wrong statement in this list.", "Statement 2. There are exactly two wrong statements in this list.", "Statement 3. There are exactly three wrong statements in this list.", "", "How many wrong statements are in the list above?"],
 	"solution": ["There are two wrong statements in the list above. The third statement contradicts itself, making it a wrong statement. First statement says that there is exactly one wrong statement in the list, meaning the other two must be correct statements. But since all the statements say \"exactly\", only one of these statements can be correct, thus making statement two correct."],
 	"source": "Brilliant"
 },{
-	"id": 5,
+	"id": 2,
 	"title": "Le Havre to New York",
 	"problem": ["Every day at noon an ocean liner leaves Le Havre to sail for New York, and (simultaneously) an ocean liner sails from New York to Le Havre. The crossing takes exactly seven days and seven nights in either direction. How many other ocean liners will an ocean liner leaving Le Havre today pass at sea before arriving in New York?","","If you're wondering whether a ship casting off from harbor just as another arrives counts as a \"pass at sea,\" yes, the solution does count these encounters."],
 	"solution": ["The answer is 15 ocean liners. When one sets sail from Le Havre, there are 6 other ocean liners already at sea that set out from New York. In addition to these, 7 more ocean liners will leave New York during the voyage, including the ship that leaves simultaneously from New York as our ship casts off from Le Havre. So a ship leaving Le Havre \"today\" will see 13 other ships in the ocean. In addition to these, it will cross paths with another ship as it casts off from Le Havre, and yet another as soon as it arrives in New York, adding 2 more. An ocean liner leaving Le Havre on any given day will pass 15 other ocean liners on its way to New York."],
 	"source": "Popular Mechanics"
 },{
-	"id": 8,
+	"id": 3,
 	"title": "The Hourglass Riddle",
 	"problem": ["You are a ware-wolf. You need to brush your teeth exactly every 15 hours to prevent yourself from turning. The problem is you do not have a clock or any other means of counting the time except for two things: An 11hr hourglass and a 7hr hourglass. How do you count 15 hours out of these?"],
 	"solution": ["Let us name 11hrglass as glass-A and 7hrglass as glass-B.", "", "1. Flip both. Time starts here.", "2. Wait till glass-B runs out.", "3. 7 hours have passed. 4 hrs left on glass-A.", "4. Flip glass-B and wait till glass-A runs out.", "5. 11 hours have passed. Not warewolf yet.", "6. Glass-B has 3 hrs left. Flip glass-B.", "7. 4 hrs remaining on glass-B. When it runs-out that is 15 hours!", "8. Brush your teeth!"],
 	"source": "Popular Mechanics"
 },{
-	"id": 9,
+	"id": 4,
 	"title": "8Digits",
 	"problem": ["Create a number using only the digits 4,4,3,3,2,2,1 and 1 so it can only be eight digits. You have to make sure the ones are separated by one digit, the twos are separated by two digits the threes are separated with three digits and the fours are separated by four digits"],
 	"solution": ["41312432"],

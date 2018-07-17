@@ -21,6 +21,5 @@ controllers.mainController =  ['$scope', '$http', function($scope, $http){
     $scope.directory = false;
     $scope.solution = false;
     $scope.getScope = () => $scope;
-    console.log($scope.riddles);
 }];
 riddleApp.controller(controllers);
