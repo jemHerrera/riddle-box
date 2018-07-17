@@ -20,19 +20,7 @@ controllers.mainController =  ['$scope', '$http', function($scope, $http){
     $scope.count = 0;
     $scope.directory = false;
     $scope.solution = false;
-    // $scope.imageStyle = {
-    //     "background": "url("+ $scope.riddles[$scope.count]['image'] + ")no-repeat",
-    //     "background-size": "contain"
-    // }
-
     $scope.getScope = () => $scope;
+    console.log($scope.riddles);
 }];
 riddleApp.controller(controllers);
-
-
-// NEED!
-
-// 1. Create a random number from 0 to $scope.riddles.length-1 to show a random riddleApp. this must be done before the loading (maybe on config?)
-// 2. Make sure show and next buttons work
-// 4. add more riddles, preferably 50ish? as well as pictures
-// 3. style the project
