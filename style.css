@@ -17,7 +17,7 @@ body {
     display: -ms-flexbox;
     display: flex; }
     body main .directory {
-      width: 24%;
+      width: 30%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -51,7 +51,8 @@ body {
         opacity: 0;
         height: 0%; }
     body main #problem {
-      margin-left: 2%; }
+      width: 60%;
+      margin: 0 20% 0 2%; }
       body main #problem image {
         width: 100%; }
       body main #problem h2 {
