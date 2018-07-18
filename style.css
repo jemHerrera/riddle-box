@@ -24,7 +24,8 @@ body {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
-      flex-direction: column; }
+      flex-direction: column;
+      margin-bottom: 2%; }
       body main .directory > button {
         background-color: #191d23;
         color: white;
@@ -66,7 +67,8 @@ body {
         margin: 2% 0; }
       body main #problem .show-solution {
         text-align: left;
-        color: #6ad4ee; }
+        color: #6ad4ee;
+        max-width: 200px; }
       body main #problem #solution ul {
         margin-bottom: 10%; }
       body main #problem #solution h2 {
@@ -78,7 +80,10 @@ body {
         -webkit-transition: color 100ms ease-in-out;
         -o-transition: color 100ms ease-in-out;
         transition: color 100ms ease-in-out;
-        margin-top: 5%; }
+        margin-top: 5%;
+        -ms-flex-item-align: end;
+        align-self: flex-end;
+        max-width: 200px; }
         body main #problem .secondary-link:hover {
           color: #6ad4ee; }
   body footer {
