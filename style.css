@@ -12,9 +12,11 @@ body {
   body header {
     background-color: #6ad4ee; }
   body main {
-    margin-top: 10%; }
+    margin-top: 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
     body main .directory {
-      position: absolute;
       width: 24%;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -48,34 +50,36 @@ body {
       body main .directory ul.ng-hide {
         opacity: 0;
         height: 0%; }
-    body main #problem image {
-      width: 100%; }
-    body main #problem h2 {
-      margin: 2% 0;
-      font-size: 170%; }
-    body main #problem ul li {
-      min-height: 1.3em; }
-    body main #problem p {
-      color: #5050507c;
-      font-size: 80%;
-      margin: 2% 0; }
-    body main #problem .show-solution {
-      text-align: left;
-      color: #6ad4ee; }
-    body main #problem #solution ul {
-      margin-bottom: 10%; }
-    body main #problem #solution h2 {
-      color: #6ad4ee; }
-    body main #problem .secondary-link {
-      padding: 2% 0;
-      text-align: right;
-      color: #5050507c;
-      -webkit-transition: color 100ms ease-in-out;
-      -o-transition: color 100ms ease-in-out;
-      transition: color 100ms ease-in-out;
-      margin-top: 5%; }
-      body main #problem .secondary-link:hover {
+    body main #problem {
+      margin-left: 2%; }
+      body main #problem image {
+        width: 100%; }
+      body main #problem h2 {
+        margin: 2% 0;
+        font-size: 170%; }
+      body main #problem ul li {
+        min-height: 1.3em; }
+      body main #problem p {
+        color: #5050507c;
+        font-size: 80%;
+        margin: 2% 0; }
+      body main #problem .show-solution {
+        text-align: left;
         color: #6ad4ee; }
+      body main #problem #solution ul {
+        margin-bottom: 10%; }
+      body main #problem #solution h2 {
+        color: #6ad4ee; }
+      body main #problem .secondary-link {
+        padding: 2% 0;
+        text-align: right;
+        color: #5050507c;
+        -webkit-transition: color 100ms ease-in-out;
+        -o-transition: color 100ms ease-in-out;
+        transition: color 100ms ease-in-out;
+        margin-top: 5%; }
+        body main #problem .secondary-link:hover {
+          color: #6ad4ee; }
   body footer {
     background-color: #191d23;
     padding: 2%;
