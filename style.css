@@ -1,150 +1,192 @@
 *, *:after, *:before {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 body {
   background: url("images/grey-prism.svg") repeat;
-  font-family: 'Ubuntu Mono', sans-serif;
+  font-family: "Ubuntu Mono", sans-serif;
   font-size: 1.3em;
   font-weight: 400;
   min-height: 100vh;
-  color: #191d23; }
-  body header {
-    background-color: #6ad4ee; }
-  body main {
-    margin-top: 10%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    body main .directory {
-      width: 30%;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      margin-bottom: 2%; }
-      body main .directory > button {
-        background-color: #191d23;
-        color: white;
-        text-align: end;
-        padding: 3%; }
-        body main .directory > button .fa-caret-down, body main .directory > button .fa-caret-up {
-          color: white; }
-      body main .directory ul {
-        -webkit-transition: all 200ms ease-in-out;
-        -o-transition: all 200ms ease-in-out;
-        transition: all 200ms ease-in-out; }
-        body main .directory ul li {
-          text-align: right; }
-          body main .directory ul li button {
-            font-size: 80%;
-            margin: 4%;
-            color: #191d23;
-            -webkit-transition: color 100ms ease-in-out;
-            -o-transition: color 100ms ease-in-out;
-            transition: color 100ms ease-in-out; }
-          body main .directory ul li button:hover {
-            color: #6ad4ee; }
-      body main .directory ul.ng-hide {
-        opacity: 0;
-        height: 0%; }
-    body main #problem {
-      width: 60%;
-      margin: 0 20% 0 2%; }
-      body main #problem image {
-        width: 100%; }
-      body main #problem h2 {
-        margin: 2% 0;
-        font-size: 170%; }
-      body main #problem ul li {
-        min-height: 1.3em; }
-      body main #problem p {
-        color: #5050507c;
-        font-size: 80%;
-        margin: 2% 0; }
-      body main #problem .show-solution {
-        text-align: left;
-        color: #6ad4ee;
-        max-width: 200px; }
-      body main #problem #solution ul {
-        margin-bottom: 10%; }
-      body main #problem #solution h2 {
-        color: #6ad4ee; }
-      body main #problem .secondary-link {
-        padding: 2% 0;
-        text-align: right;
-        color: #5050507c;
-        -webkit-transition: color 100ms ease-in-out;
-        -o-transition: color 100ms ease-in-out;
-        transition: color 100ms ease-in-out;
-        margin-top: 5%;
-        -ms-flex-item-align: end;
-        align-self: flex-end;
-        max-width: 200px; }
-        body main #problem .secondary-link:hover {
-          color: #6ad4ee; }
-  body footer {
-    background-color: #191d23;
-    padding: 2%;
-    margin-top: auto; }
-    body footer * {
-      color: white;
-      font-size: 90%; }
-  body h1 {
-    font-family: 'Pacifico', cursive; }
-  body button, body button:active {
-    border: none;
-    outline: none;
-    background: none;
-    cursor: pointer;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: 300; }
-  body li {
-    list-style: none; }
-  body a {
-    text-decoration: none;
-    color: inherit; }
+  color: #191d23;
+}
+body header {
+  background-color: #6ad4ee;
+}
+body main {
+  margin-top: 10%;
+  display: flex;
+}
+body main .directory {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2%;
+}
+body main .directory > button {
+  background-color: #191d23;
+  color: white;
+  text-align: end;
+  padding: 3%;
+}
+body main .directory > button .fa-caret-down, body main .directory > button .fa-caret-up {
+  color: white;
+}
+body main .directory ul {
+  transition: all 200ms ease-in-out;
+}
+body main .directory ul li {
+  text-align: right;
+}
+body main .directory ul li button {
+  font-size: 80%;
+  margin: 4%;
+  color: #191d23;
+  transition: color 100ms ease-in-out;
+}
+body main .directory ul li button:hover {
+  color: #6ad4ee;
+}
+body main .directory ul.ng-hide {
+  opacity: 0;
+  height: 0%;
+}
+body main #problem {
+  width: 60%;
+  margin: 0 20% 0 2%;
+}
+body main #problem image {
+  width: 100%;
+}
+body main #problem h2 {
+  margin: 2% 0;
+  font-size: 170%;
+}
+body main #problem ul li {
+  min-height: 1.3em;
+}
+body main #problem p {
+  color: #5050507c;
+  font-size: 80%;
+  margin: 2% 0;
+}
+body main #problem .show-solution {
+  text-align: left;
+  color: #6ad4ee;
+  max-width: 200px;
+}
+body main #problem #solution ul {
+  margin-bottom: 10%;
+}
+body main #problem #solution h2 {
+  color: #6ad4ee;
+}
+body main #problem .secondary-link {
+  padding: 2% 0;
+  text-align: right;
+  color: #5050507c;
+  transition: color 100ms ease-in-out;
+  margin-top: 5%;
+  align-self: flex-end;
+  max-width: 200px;
+}
+body main #problem .secondary-link:hover {
+  color: #6ad4ee;
+}
+body footer {
+  background-color: #191d23;
+  padding: 2%;
+  margin-top: auto;
+}
+body footer * {
+  color: white;
+  font-size: 90%;
+}
+body h1 {
+  font-family: "Pacifico", cursive;
+}
+body button, body button:active {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 300;
+}
+body li {
+  list-style: none;
+}
+body a {
+  text-decoration: none;
+  color: inherit;
+}
 
 .flex-column {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+}
 
 .flex-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row; }
+  flex-direction: row;
+}
 
 .wrapper {
   margin: auto;
-  width: 50%; }
+  width: 50%;
+}
 
 .primary-link {
   padding: 1% 0;
   color: #5050507c;
-  -webkit-transition: color 100ms ease-in-out;
-  -o-transition: color 100ms ease-in-out;
-  transition: color 100ms ease-in-out; }
-  .primary-link:hover {
-    color: #6ad4ee; }
+  transition: color 100ms ease-in-out;
+}
+.primary-link:hover {
+  color: #6ad4ee;
+}
 
 main.ng-enter {
-  -webkit-transition: all 200ms ease-in-out;
-  -o-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
-  opacity: 0; }
+  opacity: 0;
+}
 
 main.ng-enter.ng-enter-active {
-  opacity: 1; }
+  opacity: 1;
+}
+
+@media screen and (max-width: 900px) {
+  body main #problem {
+    margin: 0 2%;
+  }
+}
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 1.1em;
+  }
+
+  body main {
+    flex-direction: column;
+    margin-top: 0;
+    box-sizing: border-box;
+  }
+  body main .directory {
+    width: 100%;
+  }
+  body main #problem {
+    width: inherit;
+    margin: 5%;
+  }
+  body main #problem .secondary-link {
+    align-self: flex-start;
+    text-align: left;
+    margin-bottom: 10%;
+  }
+
+  .wrapper {
+    margin: 0 0 0 2%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

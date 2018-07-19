@@ -13,7 +13,7 @@ $font-size: 1.3em;
 body {
     background: url('images/grey-prism.svg') repeat;
     font-family: 'Ubuntu Mono', sans-serif;
-    font-size: 1.3em;
+    font-size: $font-size;
     font-weight: 400;
     min-height: 100vh;
     color: $secondary-color;
@@ -167,5 +167,35 @@ main.ng-enter{
 main.ng-enter.ng-enter-active{
     opacity:1;
 }
-// FIX
-// LONG BUTTONS, OVERLAPPING DIRECTORY
+
+//media queries
+@media screen and (max-width: 900px){
+    body main #problem{
+        margin: 0 2%;
+    }
+}
+@media screen and (max-width: 480px){
+    body{
+        font-size: 1.1em;
+    }
+    body main{
+        flex-direction: column;
+        margin-top: 0;
+        box-sizing: border-box; 
+        .directory{
+            width: 100%;
+        }
+        #problem{
+            width:inherit;
+            margin: 5%;
+            .secondary-link{
+                align-self: flex-start;
+                text-align: left;
+                margin-bottom: 10%;
+            }
+        }
+    }
+    .wrapper{
+        margin: 0 0 0 2%;
+    }
+}
